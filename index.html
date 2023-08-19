@@ -23,6 +23,9 @@
       src="https://kit.fontawesome.com/9e889ca0a4.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/summer.png" type="image/x-icon" />
+    <!-- Website Title -->
     <title>Summer Sale</title>
     <script>
       tailwind.config = {
@@ -41,13 +44,35 @@
       };
     </script>
   </head>
-  <body>
-    <header class="bg-[#F9F6E2]">
+  <body class="font-pop">
+    <header class="bg-[#F9F6E2] p-6 lg:px-[10%] lg:py-[7%]">
+      <!-- Banner Section -->
       <section id="banner">
-        <h1 class="font-pop">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
-          provident?
-        </h1>
+           <!-- Banner Container -->
+        <div class="banner-container flex flex-col gap-8 lg:flex-row-reverse lg:justify-center lg:items-center">
+
+          <!-- banner image -->
+          <div class="image-content w-10/12  m-auto lg:w-2/4 lg:justify-center lg:items-center lg:flex">
+            <img class="lg:w-[90%]" src="images/summer.png" alt="" />
+          </div>
+          <!-- banner text content -->
+          <div class="text-content space-y-8 text-center text-color-title lg:w-1/2">
+            <h3 class="text-xl font-medium">---SALE FEVER---</h3>
+            <h1 class="font-bold text-3xl">
+              Purchase TK 200 or <br> above & get
+              <span class="text-color-primary"> 20% off</span>
+            </h1>
+            <div class="promo-section gap-4 flex justify-center items-center">
+              <h4 class="text-sm">Use Promo Code</h4>
+              <button
+                class="bg-color-primary text-white px-4 py-2 rounded-xl font-semibold"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+         
+        </div>
       </section>
     </header>
     <main></main>
