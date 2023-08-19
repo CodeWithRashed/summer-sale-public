@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TailWind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--  Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9e889ca0a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Summer Sale</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color-primary": "#E527B2",
+              "color-title": "#111111",
+              "color-sub-title": "#11111150",
+            },
+            fontFamily: {
+              pop: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-[#F9F6E2]">
+      <section id="banner">
+        <h1 class="font-pop">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+          provident?
+        </h1>
+      </section>
+    </header>
+    <main></main>
+
+    <script src="index.js"></script>
+  </body>
 </html>
