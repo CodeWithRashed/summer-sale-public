@@ -287,7 +287,47 @@
               </div>
             </section>
           </div>
-          <div class="shopping-card-container lg:w-3/12"></div>
+          <!-- Shopping Cart and Coupon Section -->
+          <div class="shopping-card-container mt-10 lg:w-3/12 ">
+            <div
+              class="coupon-container w-full bg-red-300 rounded-xl p-5 space-y-3"
+            >
+              <h1 class="text">Have coupon?</h1>
+              <div class="join">
+                <input
+                  class="input join-item w-1/2"
+                  placeholder="Coupon Code"
+                />
+                <button
+                  class="btn join-item rounded-r-xl capitalize bg-color-primary border-0 text-white"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+            <div class="cart-container bg-red-300 mt-8 rounded-xl">
+              <div class="cart-items-container px-8 py-5">
+                <ol class="cart-items list-decimal border-b-2 border-[#11111150]">
+                  <li>Home Cooker</li>
+                  <li>Sports Cates</li>
+                  <li>Home Cooker</li>
+                </ol>
+
+              </div>
+              <div class="cart-price p-5">
+                <div class="total-cart-price border-b-2 border-[#11111150] ">
+                  <h2>Total Price: <span id="total"></span></h2>
+                  <h2>Discount: <span id="discount"></span></h2>
+                  <h2>Grand Total: <span id="grand-total"></span></h2>
+                </div>
+               
+                <div class="buy-cta bg-red-300 text-center">
+                  <button class="bg-color-primary text-white translate-y-[95%] px-3 py-2 rounded-xl">Make Purchase</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </section>
     </main>
