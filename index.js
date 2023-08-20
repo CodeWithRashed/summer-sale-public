@@ -47,10 +47,10 @@ function applyCoupon() {
   let discountEl = document.querySelector("#discount"); //getting discount element
   let discountAmount = (20 / 100) * totalPriceFloat;
   if (couponValue === "SELL200") {
-    console.log(totalPriceFloat);
     let discountResult = (discountEl.innerText =
       discountAmount.toFixed(2) + " " + "TK");
     discountEl.innerText = discountResult;
+    document.querySelector("#coupon-input").value = "";
     setGrandTotal();
   }else{
     alert("Invalid Coupon Code")
@@ -67,4 +67,12 @@ function setGrandTotal() {
 
 function setAttribute(elementId) {
   document.getElementById(elementId).disabled = false;
+}
+
+
+function resetWebsite(){
+   document.querySelector(".cart-items").innerHTML = "";
+    grandTotalEl.innerText =  "00.00 TK";
+    discountEl.innerText =  "00.00 TK";
+    totalPriceEl.innerText =  "00.00 TK";
 }
