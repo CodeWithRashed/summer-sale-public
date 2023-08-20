@@ -80,4 +80,6 @@ function resetWebsite(){
     grandTotalEl.innerText =  "00.00 TK";
     discountEl.innerText =  "00.00 TK";
     totalPriceEl.innerText =  "00.00 TK";
+    document.getElementById("buy-btn").disabled = true;
+    document.getElementById("coupon-btn").disabled = true;
 }
