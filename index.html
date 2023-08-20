@@ -410,8 +410,11 @@
                     Make Purchase
                   </button>
                   <!-- Open the modal using ID.showModal() method -->
-                  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                    <form method="dialog" class="modal-box w-3/4 lg:w-5/12 p-5 px-10 lg:p-16">
+                  <dialog id="my_modal_5" class="modal modal-middle">
+                    <form
+                      method="dialog"
+                      class="modal-box w-3/4 lg:w-5/12 p-5 px-10 lg:p-16"
+                    >
                       <div
                         class="modal-content flex justify-center items-center flex-col space-y-4"
                       >
@@ -422,14 +425,13 @@
                         </p>
                         <div class="modal-action">
                           <button
-                          onclick="resetWebsite()"
-                           class="btn text-white bg-color-primary hover:bg-color-primary px-8"
-                         >
-                           Go Home
-                         </button>
+                            onclick="resetWebsite()"
+                            class="btn text-white bg-color-primary hover:bg-color-primary px-8"
+                          >
+                            Go Home
+                          </button>
                         </div>
                       </div>
-                      
                     </form>
                   </dialog>
                 </div>

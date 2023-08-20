@@ -39,6 +39,8 @@ function addToCart(data) {
   }
 }
 
+
+//Apply Coupon Code 
 function applyCoupon() {
   let couponValue = document.querySelector("#coupon-input").value;
   let totalPriceEl = document.querySelector("#total"); //getting total or Sub total element
@@ -57,6 +59,8 @@ function applyCoupon() {
   }
 }
 
+
+//Setting Total or Grand Total
 function setGrandTotal() {
   let totalPriceString = totalPriceEl.innerText.split(" ")[0]; //getting total or Sub total as string
   let totalPriceFloat = parseFloat(totalPriceString); //getting total or Sub total as float
@@ -65,11 +69,12 @@ function setGrandTotal() {
   grandTotalEl.innerText = finalGrandTotal.toFixed(2) + " " + "TK";
 }
 
+//Enable Buttons Function
 function setAttribute(elementId) {
   document.getElementById(elementId).disabled = false;
 }
 
-
+//Modal Function
 function resetWebsite(){
    document.querySelector(".cart-items").innerHTML = "";
     grandTotalEl.innerText =  "00.00 TK";
